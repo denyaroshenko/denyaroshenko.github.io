@@ -52,16 +52,15 @@ h3 {
 	margin: 15px 0 0 0;
 }
 
-
 .white {
 	color: #fff;
 }
 
-.gray{
+.gray {
 	color: #9d9d9d;
 }
 
-.phone{
+.phone {
 	font-size: 24px;
 	font-weight: bold;
 }
@@ -134,7 +133,7 @@ h3 {
 }
 
 .free-service p {
-	font-size: 14px;
+	font-size: 18px;
 	text-align: center;
 	margin: 20px 0 0 0;
 }
@@ -153,8 +152,11 @@ h3 {
 }
 
 .no-parking p {
+	font-size: 16px;
+	font-weight: 100;
 	margin-top: 2px;
 	color: #777;
+	overflow: hidden;
 }
 
 .callback-form {
@@ -306,16 +308,16 @@ input:-moz-placeholder {
 	margin-top: 40px;
 }
 
-.navbar{
+.navbar {
 	margin: 0;
 }
 
-.navbar-contacts{
+.navbar-contacts {
 	text-align: right;
 	margin: 15px 15px 0 0;
 }
 
-.nav a{
+.nav a {
 	font-size: 16px;
 	font-weight: 500;
 	color: #000 !important;
@@ -324,11 +326,14 @@ input:-moz-placeholder {
 }
 
 @media (max-width: 768px) {
+	section {
+		padding: 20px 0;
+	}
 	h2 {
 		font-size: 28px;
 		color: #000;
 		text-align: center;
-		margin: 0;
+		margin: 0 0 30px 0;
 	}
 	h3 {
 		font-size: 18px;
@@ -339,8 +344,23 @@ input:-moz-placeholder {
 		text-align: center;
 		margin: 15px 0 0 0;
 	}
-	.blue-block p{
+	.blue-block p {
 		font-size: 18px;
 	}
+	.free-service {
+		margin: 0;
+	}
+	.free-service p {
+		font-size: 14px;
+		margin: 5px 0 15px;
+		font-weight: 100;
+	}
+	.col-xs-4 {
+		min-height: 160px;
+	}
+	.no-parking {}
+	.no-parking img {}
+	.no-parking p {
+		font-size: 14px;
+	}
 }
-
