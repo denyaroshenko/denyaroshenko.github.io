@@ -134,8 +134,8 @@ h3 {
 .free-service>.img {
 	width: 145px;
 	height: 145px;
-	display:inline-block;
-vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .free-service p {
@@ -381,5 +381,12 @@ input:-moz-placeholder {
 	}
 	.rools p {
 		font-size: 14px;
+	}
+	.free-service>.img {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		vertical-align: middle;
+		background-size: 80% !important;
 	}
 }
