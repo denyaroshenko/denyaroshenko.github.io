@@ -165,7 +165,7 @@ h3 {
 
 .callback-form input {
 	display: inline-block;
-	width: 400px;
+	width: 100%;,di
 	vertical-align: middle;
 	height: 50px;
 	border-bottom: 3px solid #B8EEEE;
@@ -179,7 +179,7 @@ h3 {
 
 .callback-form input:focus {
 	display: inline-block;
-	width: 400px;
+	width: 100%;
 	vertical-align: middle;
 	height: 50px;
 	border-bottom: 3px solid #fff;
@@ -330,16 +330,19 @@ input:-moz-placeholder {
 		padding: 20px 0;
 	}
 	h2 {
-		font-size: 28px;
+		font-size: 24px;
 		color: #000;
 		text-align: center;
 		margin: 0 0 30px 0;
+	}
+	h2 + .subtitle{
+		margin-top: -20px;
 	}
 	h3 {
 		font-size: 18px;
 	}
 	.subtitle {
-		font-size: 18px;
+		font-size: 16px;
 		color: #777;
 		text-align: center;
 		margin: 15px 0 0 0;
@@ -360,5 +363,9 @@ input:-moz-placeholder {
 	.no-parking img {}
 	.no-parking p {
 		font-size: 14px;
+	}
+	
+	.callback-form button{
+		margin: 20px auto 0;
 	}
 }
