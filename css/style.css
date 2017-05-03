@@ -128,8 +128,14 @@ h3 {
 .free-service img {
 	width: 100%;
 	height: auto;
-	border-radius: 50%;
 	text-align: center;
+}
+
+.free-service>.img {
+	width: 145px;
+	height: 145px;
+	display:inline-block;
+vertical-align: middle;
 }
 
 .free-service p {
@@ -165,8 +171,9 @@ h3 {
 
 .callback-form input {
 	display: inline-block;
-	width: 100%;,di
-	vertical-align: middle;
+	width: 100%;
+	,
+	di vertical-align: middle;
 	height: 50px;
 	border-bottom: 3px solid #B8EEEE;
 	background: none;
@@ -335,7 +342,7 @@ input:-moz-placeholder {
 		text-align: center;
 		margin: 0 0 30px 0;
 	}
-	h2 + .subtitle{
+	h2+.subtitle {
 		margin-top: -20px;
 	}
 	h3 {
@@ -346,6 +353,9 @@ input:-moz-placeholder {
 		color: #777;
 		text-align: center;
 		margin: 15px 0 0 0;
+	}
+	.big-text {
+		font-size: 26px;
 	}
 	.blue-block p {
 		font-size: 18px;
@@ -358,14 +368,18 @@ input:-moz-placeholder {
 		margin: 5px 0 15px;
 		font-weight: 100;
 	}
-
 	.no-parking {}
 	.no-parking img {}
 	.no-parking p {
 		font-size: 14px;
 	}
-	
-	.callback-form button{
+	.callback-form button {
 		margin: 20px auto 0;
+	}
+	.rools {
+		margin-top: 0px;
+	}
+	.rools p {
+		font-size: 14px;
 	}
 }
