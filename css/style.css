@@ -355,9 +355,7 @@ input:-moz-placeholder {
 		margin: 5px 0 15px;
 		font-weight: 100;
 	}
-	.col-xs-4 {
-		min-height: 160px;
-	}
+
 	.no-parking {}
 	.no-parking img {}
 	.no-parking p {
