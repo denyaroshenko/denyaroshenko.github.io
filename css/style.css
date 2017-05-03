@@ -323,6 +323,7 @@ input:-moz-placeholder {
 	margin-left: 20px;
 }
 
+/*
 @media (max-width: 768px) {
 	h2 {
 		font-size: 28px;
@@ -343,4 +344,5 @@ input:-moz-placeholder {
 		font-size: 18px;
 	}
 }
+*/
 
