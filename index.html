@@ -342,74 +342,40 @@
 
 	<!-- Кнопка, открывающее модальное окно -->
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Открыть модальное окно</button>
+  Открыть модальное окно
+</button>
+
+	<!-- Модальное окно -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<!-- Контейнер, содержащий форму обратной связи -->
-					<div class="panel panel-info">
-						<!-- Заголовок контейнера -->
-						<div class="panel-heading">
-							<h3 class="panel-title">Форма обратной связи</h3>
-						</div>
-						<!-- Содержимое контейнера -->
-						<div class="panel-body">
-
-							<!-- Сообщение, отображаемое в случае успешной отправки данных -->
-							<div class="alert alert-success hidden" role="alert" id="successMessage">
-								<strong>Внимание!</strong> Ваше сообщение успешно отправлено.
-							</div>
-
-							<!-- Форма обратной связи -->
-							<form id="contactForm">
-								<div class="row">
-
-
-									<div id="error" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
-
-									<!-- Имя и email пользователя -->
-									<div class="col-sm-6">
-										<!-- Имя пользователя -->
-										<div class="form-group has-feedback">
-											<label for="name" class="control-label">Введите ваше имя:</label>
-											<input type="text" id="name" name="name" class="form-control" required="required" value="" placeholder="Например, Иван Иванович" minlength="2" maxlength="30">
-											<span class="glyphicon form-control-feedback"></span>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<!-- Email пользователя -->
-										<div class="form-group has-feedback">
-											<label for="email" class="control-label">Введите адрес email:</label>
-											<input type="email" id="email" name="email" class="form-control" required="required" value="" placeholder="Например, ivan@mail.ru" maxlength="30">
-											<span class="glyphicon form-control-feedback"></span>
-										</div>
-									</div>
-								</div>
-
-								<!-- Сообщение пользователя -->
-								<div class="form-group has-feedback">
-									<label for="message" class="control-label">Введите сообщение:</label>
-									<textarea id="message" class="form-control" rows="3" placeholder="Введите сообщение от 20 до 500 символов" minlength="20" maxlength="500" required="required"></textarea>
-								</div>
-
-								<hr>
-
-								<!-- Кнопка, отправляющая форму -->
-								<button type="submit" class="btn btn-primary pull-right">Отправить сообщение</button>
-							</form>
-							<!-- Конец формы -->
-
-						</div>
-					</div>
-					<!-- Конец контейнера -->
-
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+          <span aria-hidden="true">×</span>
+        </button>
+					<h4 class="modal-title" id="myModalLabel">Заголовок модального окна</h4>
+				</div>
+				<div class="modal-body">
+					<form id="form">
+						<h2 id="modal1Title">Оставьте ваши контактные данные и наш консультант свяжется с вами</h2>
+						<input type="text" class="putName col-md-8 col-md-offset-2" name="name" placeholder="Ваше ваше имя" required>
+						<input name="phone" type="tel" class="putPhone col-md-8 col-md-offset-2" placeholder="Введите номер телефона" required>
+						<input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
+						<input type="hidden" name="formData" value="Заявка с сайта">
+						<a style="font-size:12px; text-align:center; color:rgba(255, 255, 255, .3);" href="#">Хочу такую форму на свой сайт</a>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-primary">Сохранить изменения</button>
+					<input type="submit" name="submit" class="btn btn-primary" value="ОТПРАВИТЬ">
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<script src="js/feedback/script.min.js"></script>
+
+	<script src="dist/remodal.min.js"></script>
+	<script src="js/feedback.min.js"></script>
 
 	<script src="js/move-to-ancons.js"></script>
 </body>
