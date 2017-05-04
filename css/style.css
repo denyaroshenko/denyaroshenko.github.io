@@ -60,6 +60,10 @@ h3 {
 	color: #9d9d9d;
 }
 
+.bottom-null {
+	margin-bottom: 0;
+}
+
 .phone {
 	font-size: 24px;
 	font-weight: bold;
@@ -332,6 +336,14 @@ input:-moz-placeholder {
 	margin-left: 20px;
 }
 
+.scheme {
+	background: url('../img/scheme.png') no-repeat;
+	background-size: 100%;
+	height: 170px;
+	width: 100%;
+	margin: 30px 0 0 0;
+}
+
 @media (max-width: 768px) {
 	section {
 		padding: 20px 0;
@@ -354,6 +366,12 @@ input:-moz-placeholder {
 		text-align: center;
 		margin: 15px 0 0 0;
 	}
+	.first-screen {
+		height: 300px;
+	}
+	.first-screen:before {
+		height: 300px;
+	}
 	.big-text {
 		font-size: 26px;
 	}
@@ -368,7 +386,9 @@ input:-moz-placeholder {
 		margin: 5px 0 15px;
 		font-weight: 100;
 	}
-	.no-parking {}
+	.no-parking {
+		margin-top: 15px;
+	}
 	.no-parking img {}
 	.no-parking p {
 		font-size: 14px;
@@ -389,4 +409,10 @@ input:-moz-placeholder {
 		vertical-align: middle;
 		background-size: 80% !important;
 	}
+	.scheme {
+	background: url('../img/scheme-vertical.png') no-repeat;
+	background-size: 100%;
+	height: 100px;
+	width: 100%;
+}
 }
