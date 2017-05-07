@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(document).ready(function () {	
+	//Обработка брони номера
 	$("form").submit(function () {
 		// Получение ID формы
 		var formID = $(this).attr('id');
@@ -6,7 +7,7 @@ $(document).ready(function () {
 		var formNm = $('#' + formID);
 		$.ajax({
 			type: "POST",
-			url: 'mail.php',
+			url: '/room-reserve.php',
 			data: formNm.serialize(),
 			success: function (data) {
 				// Вывод текста результата отправки
